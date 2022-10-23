@@ -7,6 +7,8 @@
 .LC1:
 	.string	"%d %c"			# .LC1: "%d %c"
 	.text
+        .globl  main                    # секция с кодом
+        .type   main, @function
 main:
 	endbr64				# endbr64
 	push	rbp			# сохраняем rbp на стек
