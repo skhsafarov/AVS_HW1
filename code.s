@@ -18,21 +18,21 @@ main:
 	push	r13
 	push	r12
 	push	rbx
-	sub	rsp, 104
+	sub	rsp, 88
 	mov	rax, rsp
 	mov	rbx, rax
-	lea	rax, -100[rbp]
+	lea	rax, -92[rbp]
 	mov	rsi, rax
 	lea	rdi, .LC0[rip]
 	mov	eax, 0
 	call	__isoc99_scanf@PLT
-	mov	eax, DWORD PTR -100[rbp]
+	mov	eax, DWORD PTR -92[rbp]
 	movsx	rdx, eax
 	sub	rdx, 1
-	mov	QWORD PTR -72[rbp], rdx
+	mov	QWORD PTR -64[rbp], rdx
 	movsx	rdx, eax
-	mov	QWORD PTR -128[rbp], rdx
-	mov	QWORD PTR -120[rbp], 0
+	mov	QWORD PTR -112[rbp], rdx
+	mov	QWORD PTR -104[rbp], 0
 	movsx	rdx, eax
 	mov	r12, rdx
 	mov	r13d, 0
@@ -73,54 +73,54 @@ main:
 	add	rax, 3
 	shr	rax, 2
 	sal	rax, 2
-	mov	QWORD PTR -80[rbp], rax
-	mov	DWORD PTR -64[rbp], 0
+	mov	QWORD PTR -72[rbp], rax
+	mov	DWORD PTR -52[rbp], 0
 	jmp	.L5
 .L6:
-	lea	rax, -104[rbp]
+	lea	rax, -96[rbp]
 	mov	rsi, rax
 	lea	rdi, .LC0[rip]
 	mov	eax, 0
 	call	__isoc99_scanf@PLT
-	mov	ecx, DWORD PTR -104[rbp]
-	mov	rax, QWORD PTR -80[rbp]
-	mov	edx, DWORD PTR -64[rbp]
+	mov	ecx, DWORD PTR -96[rbp]
+	mov	rax, QWORD PTR -72[rbp]
+	mov	edx, DWORD PTR -52[rbp]
 	movsx	rdx, edx
 	mov	DWORD PTR [rax+rdx*4], ecx
-	add	DWORD PTR -64[rbp], 1
+	add	DWORD PTR -52[rbp], 1
 .L5:
-	mov	eax, DWORD PTR -100[rbp]
-	cmp	DWORD PTR -64[rbp], eax
+	mov	eax, DWORD PTR -92[rbp]
+	cmp	DWORD PTR -52[rbp], eax
 	jl	.L6
-	mov	DWORD PTR -104[rbp], 0
-	mov	eax, DWORD PTR -100[rbp]
+	mov	DWORD PTR -96[rbp], 0
+	mov	eax, DWORD PTR -92[rbp]
 	sub	eax, 1
-	mov	DWORD PTR -60[rbp], eax
+	mov	DWORD PTR -52[rbp], eax
 	jmp	.L7
 .L9:
-	mov	rax, QWORD PTR -80[rbp]
-	mov	edx, DWORD PTR -60[rbp]
+	mov	rax, QWORD PTR -72[rbp]
+	mov	edx, DWORD PTR -52[rbp]
 	movsx	rdx, edx
 	mov	eax, DWORD PTR [rax+rdx*4]
 	test	eax, eax
 	jns	.L8
-	mov	eax, DWORD PTR -104[rbp]
+	mov	eax, DWORD PTR -96[rbp]
 	add	eax, 1
-	mov	DWORD PTR -104[rbp], eax
+	mov	DWORD PTR -96[rbp], eax
 .L8:
-	sub	DWORD PTR -60[rbp], 1
+	sub	DWORD PTR -52[rbp], 1
 .L7:
-	cmp	DWORD PTR -60[rbp], 0
+	cmp	DWORD PTR -52[rbp], 0
 	jns	.L9
-	mov	eax, DWORD PTR -104[rbp]
+	mov	eax, DWORD PTR -96[rbp]
 	mov	rdx, rsp
 	mov	r12, rdx
 	movsx	rdx, eax
 	sub	rdx, 1
-	mov	QWORD PTR -88[rbp], rdx
+	mov	QWORD PTR -80[rbp], rdx
 	movsx	rdx, eax
-	mov	QWORD PTR -144[rbp], rdx
-	mov	QWORD PTR -136[rbp], 0
+	mov	QWORD PTR -128[rbp], rdx
+	mov	QWORD PTR -120[rbp], 0
 	movsx	rdx, eax
 	mov	r14, rdx
 	mov	r15d, 0
@@ -161,39 +161,39 @@ main:
 	add	rax, 3
 	shr	rax, 2
 	sal	rax, 2
-	mov	QWORD PTR -96[rbp], rax
-	mov	DWORD PTR -104[rbp], 0
-	mov	eax, DWORD PTR -100[rbp]
+	mov	QWORD PTR -88[rbp], rax
+	mov	DWORD PTR -96[rbp], 0
+	mov	eax, DWORD PTR -92[rbp]
 	sub	eax, 1
-	mov	DWORD PTR -56[rbp], eax
+	mov	DWORD PTR -52[rbp], eax
 	jmp	.L13
 .L15:
-	mov	rax, QWORD PTR -80[rbp]
-	mov	edx, DWORD PTR -56[rbp]
+	mov	rax, QWORD PTR -72[rbp]
+	mov	edx, DWORD PTR -52[rbp]
 	movsx	rdx, edx
 	mov	eax, DWORD PTR [rax+rdx*4]
 	test	eax, eax
 	jns	.L14
-	mov	esi, DWORD PTR -104[rbp]
-	mov	rax, QWORD PTR -80[rbp]
-	mov	edx, DWORD PTR -56[rbp]
+	mov	esi, DWORD PTR -96[rbp]
+	mov	rax, QWORD PTR -72[rbp]
+	mov	edx, DWORD PTR -52[rbp]
 	movsx	rdx, edx
 	mov	ecx, DWORD PTR [rax+rdx*4]
-	mov	rax, QWORD PTR -96[rbp]
+	mov	rax, QWORD PTR -88[rbp]
 	movsx	rdx, esi
 	mov	DWORD PTR [rax+rdx*4], ecx
-	mov	eax, DWORD PTR -104[rbp]
+	mov	eax, DWORD PTR -96[rbp]
 	add	eax, 1
-	mov	DWORD PTR -104[rbp], eax
+	mov	DWORD PTR -96[rbp], eax
 .L14:
-	sub	DWORD PTR -56[rbp], 1
+	sub	DWORD PTR -52[rbp], 1
 .L13:
-	cmp	DWORD PTR -56[rbp], 0
+	cmp	DWORD PTR -52[rbp], 0
 	jns	.L15
 	mov	DWORD PTR -52[rbp], 0
 	jmp	.L16
 .L17:
-	mov	rax, QWORD PTR -96[rbp]
+	mov	rax, QWORD PTR -88[rbp]
 	mov	edx, DWORD PTR -52[rbp]
 	movsx	rdx, edx
 	mov	eax, DWORD PTR [rax+rdx*4]
@@ -204,7 +204,7 @@ main:
 	call	printf@PLT
 	add	DWORD PTR -52[rbp], 1
 .L16:
-	mov	eax, DWORD PTR -104[rbp]
+	mov	eax, DWORD PTR -96[rbp]
 	cmp	DWORD PTR -52[rbp], eax
 	jl	.L17
 	mov	edi, 10
