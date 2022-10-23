@@ -25,5 +25,6 @@ int main() {
     for (int i = 0; i < m; ++i) {
         printf("%d %c", b[i], ' ');
     }
+    printf("%c", '\n');
     return 0;
 }

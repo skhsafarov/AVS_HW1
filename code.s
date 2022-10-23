@@ -47,9 +47,9 @@ main:
 	imul	rax, rax, 16
 	mov	rdx, rax
 	and	rdx, -4096
-	mov	rdi, rsp
-	sub	rdi, rdx
-	mov	rdx, rdi
+	mov	rcx, rsp
+	sub	rcx, rdx
+	mov	rdx, rcx
 .L2:
 	cmp	rsp, rdx
 	je	.L3
@@ -129,15 +129,15 @@ main:
 	mov	eax, 16
 	sub	rax, 1
 	add	rax, rdx
-	mov	edi, 16
+	mov	ecx, 16
 	mov	edx, 0
-	div	rdi
+	div	rcx
 	imul	rax, rax, 16
 	mov	rdx, rax
 	and	rdx, -4096
-	mov	rcx, rsp
-	sub	rcx, rdx
-	mov	rdx, rcx
+	mov	rdi, rsp
+	sub	rdi, rdx
+	mov	rdx, rdi
 .L10:
 	cmp	rsp, rdx
 	je	.L11
@@ -207,6 +207,8 @@ main:
 	mov	eax, DWORD PTR -104[rbp]
 	cmp	DWORD PTR -52[rbp], eax
 	jl	.L17
+	mov	edi, 10
+	call	putchar@PLT
 	mov	eax, 0
 	mov	rsp, r12
 	mov	rsp, rbx
